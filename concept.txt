@@ -1,0 +1,21 @@
+
+// for dynamic content of the web page 
+// we have some templets engine 
+// ejs 
+
+
+// npm install nodemon 
+
+// npm install ejs :) this is templets engine  
+// this is used to show the dynamic content of the web page 
+
+// if we wanto used the ejs 
+// so first we have to tell the express js 
+// ki hum isko used karne wale hai 
+app.set('view engine','ejs');
+
+we a  methods get 
+console.log(app.get(view engine)); -> ejs
+
+
+// express js provied the routing in the  that  help in to reduce the code 

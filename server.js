@@ -1,27 +1,22 @@
 const express= require('express');
-const path = require('path');
-
 const app= express();// this retrun a function 
+const path= require('path');
+const mainRouter = require('./routes/index');
 
-// here we see the how to create the routs 
 
-// app.get('/',(req,res)=>{
-//     res.sendFile(path.resolve(__dirname,'index.html',));
-// })
-
-// app.get('/about',(req,res)=>{
-//     res.sendFile(path.resolve(__dirname,'about.html',));
-// })
+app.set('view engine','ejs');
 
 
 
-// static middle ware 
-
-app.use(express.static('public'));
 
 
+
+
+app.use(mainRouter);
 // server is created successfully 
 const port = process.env.port||3000;
 app.listen(port,()=>{
     console.log(`server is running on port  ${port}...`);
 });
+
+
