@@ -19,3 +19,8 @@ console.log(app.get(view engine)); -> ejs
 
 
 // express js provied the routing in the  that  help in to reduce the code 
+
+
+
+// middle warre in the express js 
+
